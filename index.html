@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>multisteps.js</title>
+  <meta charset="utf-8" />
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+  <!-- depends on jquery and bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- main code -->
+  <script src="multisteps.js"></script>
+  <link rel="stylesheet" href="multisteps.css" type="text/css">
+  <style>
+  body {
+    padding: 20px;
+  }
+  .multisteps {
+    height: 300px;
+    width: 100px;
+    background-color: #eee;
+  }
+  .multisteps3 .point {
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+
+  <h2><a href="https://github.com/jdk137/webdev-gadgets-multisteps">webdev-gadgets-multisteps</a><h2>
+
+  <h3 class="desc">html code</h3>
+  <xmp class="prettyprint">
+    <div style="width: 100px; height: 300px;"></div>
+  </xmp>
+
+  <h3 class="desc">1. simple example</h3>
+  <xmp class="prettyprint code1">
+  $('.multisteps1').multisteps({
+    steps: ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'],
+    currentStep: 3
+  });
+  </xmp>
+  <div class="multisteps multisteps1"></div>
+
+  <h3 class="desc">2. add more config params</h3>
+  <xmp class="prettyprint code2">
+  $('.multisteps2').multisteps({
+    steps: ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'],
+    currentStep: 4, // current step index
+    wordSide: 'right', // word on left or right
+    margin: {
+      left: 10,
+      right: 10,
+      top: 15,
+      bottom: 15
+    }, // margin of viewbox to container
+    radius: 15, // point radius
+    activeRadius: 20, // acitve point radius
+    pointsInteval: 10, // interval between adjacent points
+    barWidth: 10, // width of bar which connects points;
+    wordPointInterval: 5  // interval between step word and point
+  });
+  </xmp>
+  <div class="multisteps multisteps2"></div>
+
+  <h3 class="desc">3. set click event, step will change when you click</h3>
+  <xmp class="prettyprint code3">
+  $('.multisteps3').multisteps({
+    steps: ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'],
+    currentStep: 0
+  });
+  $('.multisteps3').on('click', '.point', function () {
+    $('.multisteps3').multisteps({
+      steps: ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'],
+      currentStep: $(this).data('index')
+    });
+  });
+  </xmp>
+  <div class="multisteps multisteps3"></div>
+
+  <h2><a href="https://github.com/jdk137/webdev-gadgets-multisteps">back to github</a><h2>
+
+</body>
+<script>
+  eval($('.code1').text());
+  eval($('.code2').text());
+  eval($('.code3').text());
+
+</script>
+</html>
+
+
+
+
+
+
+

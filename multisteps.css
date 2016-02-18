@@ -1,0 +1,31 @@
+.multisteps-viewbox {
+  position: relative;
+}
+
+.multisteps-viewbox > div {
+  position: absolute;
+}
+
+.multisteps-viewbox .background-bar {
+  background-color: #0769AD;
+}
+.multisteps-viewbox .inactive-bar {
+  background-color: gray;
+}
+.multisteps-viewbox .word {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.multisteps-viewbox .word.active {
+  font-size: 18px;
+}
+.multisteps-viewbox .point {
+  background-color: #0769AD;
+}
+.multisteps-viewbox .point.active {
+  background-color: #0769AD;
+}
+.multisteps-viewbox .point.step-uncompleted {
+  background-color: gray;
+}
