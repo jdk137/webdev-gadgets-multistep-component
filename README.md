@@ -1,6 +1,6 @@
 # webdev-gadgets-multisteps
 
-component for visualization of multisteps, show multisteps dynamically, depends on jQuery.
+component for visualization of multisteps, show multisteps dynamically, depends on jQuery, works on html5-compatible browser.
 
 This simple component does least thing to create the visualization, focuses on layout algothrim. It almost does nothing but adds correct html code. But you can add any interactives and styles. You can fork the simple multisteps.js and multisteps.css source code to provide user-defined features. View the demos below:
 
