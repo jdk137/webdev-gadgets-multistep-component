@@ -20,3 +20,7 @@ javascript:
 
 [More complex usages](https://cdn.rawgit.com/jdk137/webdev-gadgets-multisteps/master/index.html)
 
+TODO：
+1. wordSide could be top and bottom
+2. add number in point center
+
