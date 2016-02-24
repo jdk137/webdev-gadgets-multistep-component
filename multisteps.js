@@ -1,3 +1,4 @@
+// version 1.0
 $.fn.multisteps = function (config) {
   var $container = $(this);
   // 2 required params

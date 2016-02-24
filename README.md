@@ -18,6 +18,8 @@ javascript:
   });
 ```
 
+recent version: 1.0 (2016.02.24)
+
 [More complex usages](https://cdn.rawgit.com/jdk137/webdev-gadgets-multisteps/master/index.html)
 
 
