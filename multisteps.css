@@ -17,15 +17,19 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.multisteps-viewbox .wrod.step-uncompleted {
+}
 .multisteps-viewbox .word.active {
   font-size: 18px;
 }
 .multisteps-viewbox .point {
+  box-sizing: border-box;
   background-color: #0769AD;
-}
-.multisteps-viewbox .point.active {
-  background-color: #0769AD;
+  color: white;
 }
 .multisteps-viewbox .point.step-uncompleted {
   background-color: gray;
+}
+.multisteps-viewbox .point.active {
+  background-color: #0769AD;
 }
