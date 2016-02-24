@@ -1,7 +1,7 @@
 // version 1.0
 $.fn.multisteps = function (config) {
   var $container = $(this);
-  // 2 required params
+  // required params
   // array of steps, e.g. ['a', 'b']
   var steps = config.steps;
 
